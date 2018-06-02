@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MiyaController {
     @Value("${my.name}")
     private String name;
-    @Value("{my.age}")
+    @Value("${my.age}")
     private int age;
 
     @RequestMapping(value = "/miya")
